@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Questrial|Raleway:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Questrial|Raleway:200,300,400,500,600');
 
 html, body {
   height: 100% !important;
@@ -10,13 +10,23 @@ html, body {
 
 
 header {
-  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  background: #e55039;
 }
 
-nav {
-  background: #00C0DA;
-  /* background: rgba(0, 0, 0, 0); */
-  /* background: #17a2b8; */
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: none;
+  border: 0;
+  color: #F3A712;
+}
+
+.nav-item  {
+  font-weight: 600;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0,0,0,.5);
+  border: none;
 }
 
 .navbar {
@@ -24,24 +34,27 @@ nav {
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-    /* color: #17a2b8; */
-    color: #fff;
+  color: #fff;
 }
 
 .navbar-brand {
-  margin-left: 2em;
   font-family: 'Questrial', sans-serif;
   font-size: 2em;
 }
 
+.navbar-nav {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .nav-link {
-  border-bottom: 2px solid rgba(0,0,0,0);
+  border: 0;
   font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav-item {
-  margin: 0 4em;
+  margin: 0 2em;
 }
 
 .nav-link:hover {
@@ -51,7 +64,11 @@ nav {
 /* ---------------- #app section - quote generator ---------------- */
 
 #app {
-  margin: 5em 0;
+  margin: 3em 0;
+}
+
+#app .meme {
+  overflow: hidden;
 }
 
 h2 {
@@ -77,6 +94,7 @@ h2 {
 #app button {
   margin: 2em auto;
   padding: 1em 3em;
+  min-width: 300px;
 }
 
 img {
@@ -87,7 +105,7 @@ img {
 /* ---------------- #form section - submit form ---------------- */
 
 #form {
-  background: #00C0DA;
+  background: #b71540;
   padding: 5em 0;
   color : #fff;
 }
@@ -103,9 +121,18 @@ img {
 /* general properties  */
 
 .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -115,6 +142,11 @@ img {
   .row {
     overflow: hidden;
   }
+
+  .nav-item .nav-link {
+    width: 300px;
+  }
+
   #app {
     margin: 2em 0;
   }
