@@ -60,7 +60,11 @@ var main = new Vue ({
       ['You don\'t need something to eat, you have 800 pounds food in you',''],
       ['It does not matter what you say. The scale tell me all I need to know.',''],
       ['You don\'t look human anymore',''],
-      ['Stop making excuses','']
+      ['So dell me wus going on width you!!',''],
+      ['Stop making excuses',''],
+      ['Who is your enabler?',''],
+      ['Do you look malnourished?',''],
+      ['You’re not hungry you have 850 pounds of food in you','']
       ],
     stop: false,
     styleQuote: {
